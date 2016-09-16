@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Code7 Shop - Shopping Bag</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="wrap">
+
+		<header class="header">
+
+			<a href="#" class="mobile-hamb"></a>
+
+			<section class="header__top">
+				<div class="container">
+
+					<div class="header__logo">
+						<a href="/" class="logo" title="Code7"></a>
+					</div>
+
+					<nav class="header__navigation">
+						<ul class="navigation navigation--top">
+							<li class="navigation__item active"><a href="#" id="navmain-men" class="navigation__link"><span>Men</span></a></li>
+							<li class="navigation__item"><a href="#" id="navmain-women" class="navigation__link"><span>Women</span></a></li>
+							<li class="navigation__item"><a href="#" id="navmain-brands" class="navigation__link"><span>Brands</span></a></li>
+							<li class="navigation__item"><a href="#" id="navmain-sale" class="navigation__link navigation__link--sale"><span>Sale</span></a></li>
+							<li class="navigation__item navigation__item--search">
+								<span class="search-link"></span>
+							</li>
+						</ul><!-- .navigation -->
+					</nav>
+
+					<div class="header__help-panel">
+						<a href="#" class="ww-shipping">Worldwide Shipping!</a>
+
+						<ul class="help-panel">
+							<li class="help-panel__item">
+								<span class="search-link"></span>
+							</li>
+							<li class="help-panel__item">
+								<div class="dropdown lang">
+									<a href="#" class="dropdown__link">En</a>
+									<ul class="dropdown__list">
+										<li class="dropdown__item"><a href="#">Ru</a></li>
+										<li class="dropdown__item"><a href="#">De</a></li>
+									</ul>
+								</div><!-- .lang -->
+							</li>
+							<li class="help-panel__item">
+								<div class="dropdown currency">
+									<a href="#" class="dropdown__link">₽ RUB</a>
+									<ul class="dropdown__list">
+										<li class="dropdown__item"><a href="#">&euro; EUR</a></li>
+										<li class="dropdown__item"><a href="#">&#36; USD</a></li>
+									</ul>
+								</div><!-- .currency -->
+							</li>
+							<li class="help-panel__item"><a href="#login-popup" class="login-link"></a></li>
+							<li class="help-panel__item"><span class="mini-basket"></span></li>
+						</ul>
+					</div><!-- .help-panel -->
+
+				</div>
+			</section><!-- .header__top -->
+
+			<section class="navdrop-wrap">
+				<div id="nav-mens" class="nav-drop">
+					<div class="container">
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">New In</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Clothing</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Underwear</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Jeans</a></li>
+								<li><a href="#">Vests</a></li>
+								<li><a href="#">Jackets</a></li>
+								<li><a href="#">Shirts</a></li>
+								<li><a href="#">Knitwear</a></li>
+								<li><a href="#">Sweatshirts</a></li>
+								<li><a href="#">Tees</a></li>
+								<li><a href="#">Shorts</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Footwear</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Boots</a></li>
+								<li><a href="#">Sneakers</a></li>
+								<li><a href="#">Sandals</a></li>
+								<li><a href="#">Shoe care</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Accessories</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Silver Jewelry</a></li>
+								<li><a href="#">Bandanas and scarves</a></li>
+								<li><a href="#">Bracelets</a></li>
+								<li><a href="#">Wallets</a></li>
+								<li><a href="#">Ties and butterflies</a></li>
+								<li><a href="#">Magazines and books</a></li>
+								<li><a href="#">Hats</a></li>
+								<li><a href="#">little things</a></li>
+								<li><a href="#">Socks</a></li>
+								<li><a href="#">Sunglasses</a></li>
+								<li><a href="#">Gloves</a></li>
+								<li><a href="#">Belts and suspenders</a></li>
+								<li><a href="#">Bags</a></li>
+								<li><a href="#">Caps</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title navigation__link--sale" href="#">Sale</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item nav-drop__item--right">
+							<ul class="nav-drop__list">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Distribution</a></li>
+								<li><a href="#">Store Adress</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+
+							<ul class="nav-drop__list">
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Payment</a></li>
+								<li><a href="#">Returns</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+					</div>
+				</div><!-- .nav-drop -->
+
+				<div id="nav-women" class="nav-drop">
+					<div class="container">
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">New In</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Clothing</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Underwear</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Jeans</a></li>
+								<li><a href="#">Vests</a></li>
+								<li><a href="#">Jackets</a></li>
+								<li><a href="#">Shirts</a></li>
+								<li><a href="#">Knitwear</a></li>
+								<li><a href="#">Sweatshirts</a></li>
+								<li><a href="#">Tees</a></li>
+								<li><a href="#">Shorts</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Accessories</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Silver Jewelry</a></li>
+								<li><a href="#">Bandanas and scarves</a></li>
+								<li><a href="#">Bracelets</a></li>
+								<li><a href="#">Wallets</a></li>
+								<li><a href="#">Ties and butterflies</a></li>
+								<li><a href="#">Magazines and books</a></li>
+								<li><a href="#">Hats</a></li>
+								<li><a href="#">little things</a></li>
+								<li><a href="#">Socks</a></li>
+								<li><a href="#">Sunglasses</a></li>
+								<li><a href="#">Gloves</a></li>
+								<li><a href="#">Belts and suspenders</a></li>
+								<li><a href="#">Bags</a></li>
+								<li><a href="#">Caps</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title navigation__link--sale" href="#">Sale</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item nav-drop__item--right">
+							<ul class="nav-drop__list">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Distribution</a></li>
+								<li><a href="#">Store Adress</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+
+							<ul class="nav-drop__list">
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Payment</a></li>
+								<li><a href="#">Returns</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+					</div>
+				</div><!-- .nav-drop -->
+
+				<div id="nav-brands" class="nav-drop">
+					<div class="container">
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">New In</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Clothing</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Underwear</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Jeans</a></li>
+								<li><a href="#">Vests</a></li>
+								<li><a href="#">Jackets</a></li>
+								<li><a href="#">Shirts</a></li>
+								<li><a href="#">Knitwear</a></li>
+								<li><a href="#">Sweatshirts</a></li>
+								<li><a href="#">Tees</a></li>
+								<li><a href="#">Shorts</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Footwear</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Boots</a></li>
+								<li><a href="#">Sneakers</a></li>
+								<li><a href="#">Sandals</a></li>
+								<li><a href="#">Shoe care</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title navigation__link--sale" href="#">Sale</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item nav-drop__item--right">
+							<ul class="nav-drop__list">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Distribution</a></li>
+								<li><a href="#">Store Adress</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+
+							<ul class="nav-drop__list">
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Payment</a></li>
+								<li><a href="#">Returns</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+					</div>
+				</div><!-- .nav-drop -->
+
+				<div id="nav-sale" class="nav-drop">
+					<div class="container">
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">New In</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Clothing</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Underwear</a></li>
+								<li><a href="#">Pants</a></li>
+								<li><a href="#">Jeans</a></li>
+								<li><a href="#">Vests</a></li>
+								<li><a href="#">Jackets</a></li>
+								<li><a href="#">Shirts</a></li>
+								<li><a href="#">Knitwear</a></li>
+								<li><a href="#">Sweatshirts</a></li>
+								<li><a href="#">Tees</a></li>
+								<li><a href="#">Shorts</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Footwear</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Boots</a></li>
+								<li><a href="#">Sneakers</a></li>
+								<li><a href="#">Sandals</a></li>
+								<li><a href="#">Shoe care</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title" href="#">Accessories</a>
+							<ul class="nav-drop__list">
+								<li><a href="#">Silver Jewelry</a></li>
+								<li><a href="#">Bandanas and scarves</a></li>
+								<li><a href="#">Bracelets</a></li>
+								<li><a href="#">Wallets</a></li>
+								<li><a href="#">Ties and butterflies</a></li>
+								<li><a href="#">Magazines and books</a></li>
+								<li><a href="#">Hats</a></li>
+								<li><a href="#">little things</a></li>
+								<li><a href="#">Socks</a></li>
+								<li><a href="#">Sunglasses</a></li>
+								<li><a href="#">Gloves</a></li>
+								<li><a href="#">Belts and suspenders</a></li>
+								<li><a href="#">Bags</a></li>
+								<li><a href="#">Caps</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item">
+							<a class="nav-drop__title navigation__link--sale" href="#">Sale</a>
+						</div><!-- .nav-drop__item -->
+
+						<div class="nav-drop__item nav-drop__item--right">
+							<ul class="nav-drop__list">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Distribution</a></li>
+								<li><a href="#">Store Adress</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+
+							<ul class="nav-drop__list">
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Payment</a></li>
+								<li><a href="#">Returns</a></li>
+							</ul>
+						</div><!-- .nav-drop__item -->
+
+					</div>
+				</div><!-- .nav-drop -->
+			</section>
+
+		</header>
+
+		<div class="wrap__block">
+			<div class="container">
+
+				<main class="main">
+					<div class="container">
+
+						<section class="content">
+
+							<h1 class="content__title">Shopping Bag</h1>
+							
+							<section class="shop-bag">
+								
+								<span class="shop-bag__title">Your shopping bag is empty</span>
+
+								<div class="sb-banner shop-bag__banner">
+									<div class="sb-banner__inner">
+										<div class="sb-banner__left"><span class="circle-human circle-human--women right">Men</span></div>
+										<div class="sb-banner__center"><span>Check What’s New</span></div>
+										<div class="sb-banner__right"><span class="circle-human circle-human--women left">Women</span></div>
+									</div>
+								</div>
+
+								<ul class="tags shop-bag__tags">
+									<li class="tags__item"><a href="#" class="tags__link">Selvedge</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Japan Made</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Sunglasses</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Shorts</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Selvedge</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Japan Made</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Sunglasses</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Shorts</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Selvedge</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Japan Made</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Sunglasses</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Shorts</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Selvedge</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Japan Made</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Sunglasses</a></li>
+									<li class="tags__item"><a href="#" class="tags__link">Shorts</a></li>
+								</ul>
+
+							</section><!-- .shop-bag -->
+
+						</section><!-- .content -->
+
+					</div>
+				</main>
+
+				<footer class="footer">
+					<div class="container">
+						
+						<div class="time-line">
+							<span class="time-line__brand">Code7</span>
+							<span class="time-line__year">2016</span>
+						</div><!-- .time-line -->
+
+						<div class="footer__box">
+
+							<section class="footer__navigation">
+								<ul class="navigation navigation--footer">
+									<li class="navigation__item"><a href="#" class="navigation__link">Бренды</a></li>
+									<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+									<li class="navigation__item"><a href="#" class="navigation__link">О магазине</a></li>
+									<li class="navigation__item"><a href="#" class="navigation__link">Дистрибуция</a></li>
+									<li class="navigation__item"><a href="#" class="navigation__link">Доставка и оплата</a></li>
+									<li class="navigation__item"><a href="#" class="navigation__link">Как оформить заказ</a></li>
+									<li class="navigation__item"><a href="#" class="navigation__link">Обмен и возврат</a></li>
+								</ul><!-- .navigation--footer -->
+
+								<a class="user-agreement" href="#">Пользовательское соглашение</a>
+							</section>
+
+							<section class="footer__contacts">
+								<ul class="about-list">
+									<li class="about-list__item about-list__item--city">Moscow</li>
+									<li class="about-list__item">Bolotnaya naberezhnaya, 3</li>
+									<li class="about-list__item">пн-пт: 12:00–20:00</li>
+									<li class="about-list__item">сб-вс: 13:00–20:00</li>
+									<li class="about-list__item about-list__item--phone">+7 916 200 21 77</li>
+								</ul><!-- .about-list -->
+
+								<ul class="about-list">
+									<li class="about-list__item about-list__item--city">St. Petersburg</li>
+									<li class="about-list__item">Mira, 6</li>
+									<li class="about-list__item">пн-вс: 12:00–21:00</li>
+									<li class="about-list__item about-list__item--phone">+7 921 992 09 21</li>
+								</ul><!-- .about-list -->
+							</section>
+
+							<section class="footer__social">
+								<ul class="social">
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-facebook"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-twitter"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-google-plus"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-tumblr"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-pinterest"></i></a></li>
+								</ul><!-- .social -->
+							</section>
+
+							<section class="footer__subscribe">
+								<div class="subscribe">
+									<form action="">
+										<input class="subscribe__input" type="email" placeholder="Подписка на новости">
+										<input class="subscribe__btn" type="submit">
+									</form>
+								</div><!-- .subscribe -->
+
+								<ul class="visa-card">
+									<li class="visa-card__item"><span class="visa-card__img visa-card__img--1"></span></li>
+									<li class="visa-card__item"><span class="visa-card__img visa-card__img--2"></span></li>
+									<li class="visa-card__item"><span class="visa-card__img visa-card__img--3"></span></li>
+									<li class="visa-card__item"><span class="visa-card__img visa-card__img--4"></span></li>
+									<li class="visa-card__item"><span class="visa-card__img visa-card__img--5"></span></li>
+								</ul><!-- .visa-card -->
+							</section>
+
+							
+
+						</div><!-- .footer__box -->
+
+					</div>
+				</footer>
+
+				<section class="basket">
+					<div class="basket__shadow"></div>
+
+					<div class="basket__panel">
+						<ul class="basket__list">
+							<li class="basket__item">
+								<div class="card">
+									<a class="card__link card__link--basket" href="#">			
+										<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+										<div class="card__desc">
+											<span class="card__title">TCB Jeans</span>
+											<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+											<span class="card__color">Navy</span>
+											<span class="card__price"><span>13 590</span> ₽</span>
+										</div>						
+									</a>
+									<span class="card__close"></span>
+								</div><!-- .card -->
+							</li>
+							<li class="basket__item">
+								<div class="card">
+									<a class="card__link card__link--basket" href="#">			
+										<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+										<div class="card__desc">
+											<span class="card__title">TCB Jeans</span>
+											<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+											<span class="card__color">Navy</span>
+											<span class="card__price"><span>7 590</span> ₽</span>
+										</div>						
+									</a>
+									<span class="card__close"></span>
+								</div><!-- .card -->
+							</li>
+							<li class="basket__item">
+								<div class="card">
+									<a class="card__link card__link--basket" href="#">			
+										<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+										<div class="card__desc">
+											<span class="card__title">TCB Jeans</span>
+											<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+											<span class="card__color">Navy</span>
+											<span class="card__price"><span>10 590</span> ₽</span>
+										</div>						
+									</a>
+									<span class="card__close"></span>
+								</div><!-- .card -->
+							</li>
+							<li class="basket__item">
+								<div class="card">
+									<a class="card__link card__link--basket" href="#">			
+										<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+										<div class="card__desc">
+											<span class="card__title">TCB Jeans</span>
+											<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+											<span class="card__color">Navy</span>
+											<span class="card__price"><span>18 590</span> ₽</span>
+										</div>						
+									</a>
+									<span class="card__close"></span>
+								</div><!-- .card -->
+							</li>
+						</ul>			
+
+						<div class="basket__subtotal">
+							<span class="subtotal">Subtotal: <span>52 460</span> ₽</span>
+							<a class="basket__btn btn" href="#">Checkout</a>
+						</div>		
+					</div>
+				</section><!-- .basket -->
+
+			</div>
+		</div><!-- .wrap__block -->
+
+	</div><!-- .wrap -->
+
+	<section class="search">
+		<div class="container">
+
+			<div class="clearfix">
+				<div class="search__close"></div>
+				
+				<form class="search__form" action="">
+					<input class="search__input" type="search" placeholder="What to find?">
+					<input class="search__btn" type="submit">
+				</form>
+			</div>
+
+			<section class="search-serp">
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+
+				<div class="card search-serp__item">
+					<a class="card__link" href="#">			
+						<div class="card__img-wrap"><img src="img/product/img2.png" alt="Alt" class="card__img"></div>			
+						<div class="card__desc">
+							<span class="card__title">TCB Jeans</span>
+							<span class="card__txt">60’s Trucker Jacket Type 3rd</span>
+							<span class="card__color">Navy</span>
+							<span class="card__price">13 590 ₽</span>
+						</div>						
+					</a>
+				</div><!-- .card -->
+			</section><!-- .search-serp -->
+
+			<div class="text-center">
+				<a href="#" class="btn">Все результаты</a>
+			</div>
+		</div>
+	</section><!-- .search -->
+
+	<div class="hidden">
+
+		<div id="login-popup" class="login-popup">
+			<ul class="tab-list">
+				<li class="tab-list__item active"><a href="#" class="tab-list__link"><span>Sign Up</span></a></li>
+				<li class="tab-list__item"><a href="#" class="tab-list__link"><span>Sign In</span></a></li>
+			</ul>
+
+			<section class="tab-content">
+				<div class="tab-content__item active">
+					<div class="tab-content__box">
+						<span class="tab-content__title">Sign up with:</span>
+						<ul class="social-btn">
+							<li class="social-btn__item"><a href="#" class="social-btn__link social-btn__link--fb">facebook</a></li>
+							<li class="social-btn__item"><a href="#" class="social-btn__link social-btn__link--ggl">Google</a></li>
+							<li class="social-btn__item"><a href="#" class="social-btn__link social-btn__link--tw">Twitter</a></li>
+							<li class="social-btn__item"><a href="#" class="social-btn__link social-btn__link--vk">Vkontakte</a></li>
+						</ul><!-- .social-btn -->
+					</div>
+
+					<div class="or-line"><span>Or</span></div>
+
+					<div class="tab-content__box">
+						<span class="tab-content__title">Sign up with email</span>
+						<div class="bl-form">
+							<form action="">
+								<div class="bl-form__input-wrap">
+									<input class="bl-form__input" type="email">
+									<label class="bl-form__label">Email</label>
+								</div>
+								<div class="bl-form__input-wrap">
+									<input class="bl-form__input" type="password">
+									<label class="bl-form__label">Password</label>
+								</div>
+
+								<input class="bl-form__btn btn btn--disabled" type="submit" value="Join In" disabled>
+							</form>
+						</div><!-- .bl-form -->
+					</div>
+				</div>
+
+				<div class="tab-content__item">
+					<div class="tab-content__box">
+						<span class="tab-content__title">Sign in with email</span>
+						<div class="bl-form">
+							<form action="">
+								<div class="bl-form__input-wrap">
+									<input class="bl-form__input" type="email">
+									<label class="bl-form__label">Email</label>
+								</div>
+								<div class="bl-form__input-wrap">
+									<input class="bl-form__input" type="password">
+									<label class="bl-form__label">Password</label>
+								</div>
+
+								<input class="bl-form__btn btn btn--disabled" type="submit" value="Join In" disabled>
+							</form>
+						</div><!-- .bl-form -->
+					</div>
+				</div>
+			</section><!-- .tab-content -->
+		</div><!-- .login-popup -->
+
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

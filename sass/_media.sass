@@ -1,0 +1,335 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.products, .search-serp
+		&__item
+			width: 33.3333%
+
+
+	.ww-shipping
+		display: none
+
+	.help-panel
+		&__item
+			&:nth-child(2),
+			&:nth-child(3)
+				display: none
+
+	.container
+		padding: 0 10px
+
+	.footer
+		&__navigation, &__contacts
+			width: 50%
+			margin-bottom: 25px
+
+		&__subscribe
+			width: 100%
+			float: none
+
+		&__social
+			width: 100%
+			margin-top: -10px
+
+			.social
+				float: none
+
+		.visa-card
+			margin-top: 10px
+			max-width: 300px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.brands
+		&__list
+			column-count: 3
+
+	.content
+		&--profile
+			.col2
+				max-width: 1298px
+				width: 100%
+				float: none
+
+		&--isnohome
+			width: 100%
+			float: none
+
+	.bl-form
+		.left, .right
+			float: none
+			width: 100%
+			padding: 0
+
+	.bl-block .bl-form .right, .bl-block .bl-form .left
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+
+	.bl-block__inner
+		padding: 0
+
+	.bl-block__title
+		padding-left: 0
+
+	.sidebar
+		float: none
+		width: 100%
+		margin-bottom: 30px
+
+		&__nav-item
+			float: left
+			margin-right: 20px
+
+	.logout-item
+		margin-top: 0
+
+	.col3, .col1, .col2, .col4
+		max-width: 1298px
+		float: none
+
+	.products, .search-serp
+		&__item
+			width: 50%
+			min-width: auto
+
+	.logo
+		width: 80px
+		height: 25px
+
+	.header
+		&__logo
+			margin-right: 25px
+
+		&__navigation
+			top: 3px
+
+	.navigation
+		&--top
+			.navigation__link
+				padding: 20px 7px
+
+	.help-panel
+		top: 5px
+
+	.footer
+		&__navigation
+			width: 60%
+
+		&__contacts
+			width: 40%
+
+	.sb-banner 
+		display: none
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.container
+		padding: 0
+
+	.search-serp
+		padding: 0 10px
+		&__item
+			width: 100%
+
+	.sidebar
+		padding: 0 10px
+
+	.main
+		&:before
+			display: none
+
+	.personal
+		&__item
+			float: none
+			width: 100%
+
+			&:first-child
+				margin-bottom: 25px
+
+	.cards .bl-form__input-wrap
+		margin: auto
+		text-align: center
+		margin-top: 30px
+
+	.content
+		padding: 0 10px
+
+		&__title
+			display: block
+			text-align: center
+			margin-bottom: 25px
+
+		&--ishome
+			padding: 0
+
+		&--profile h2
+			padding-left: 0
+
+	.bl-block--subc
+		.left, .right
+			float: none
+
+		.left
+			margin-bottom: 20px
+
+	.brands
+		padding: 0 10px
+
+		&__list
+			column-count: 2
+
+	.help-panel
+		&__item:nth-child(1)
+				display: inline-block
+
+	.search-link
+		width: 21px
+		height: 21px
+		top: -3px
+		position: relative
+		background-position: 0 -78px
+
+	.mobile-hamb
+		display: inline-block
+		position: absolute
+		left: 10px
+		top: 20px
+
+	.footer 
+		.container
+			padding: 0 10px
+
+		&__navigation, &__contacts 
+			width: 100%
+
+		&__subscribe
+			display: none
+
+	.paging
+		padding: 0 10px
+
+		&__left,&__right
+			width: 40%
+
+		&__btn
+			width: 100%
+			margin-top: 50px
+
+	.main
+		padding-top: 25px
+
+	.product-card
+		&__box
+			min-height: 170px
+			min-height: auto
+			line-height: 170px
+			padding: 10px
+
+		&__label
+			display: none
+
+		&__img
+			max-height: 160px
+
+		&__desc
+			padding-left: 10px
+			padding-right: 10px
+
+	.products__item--stayup
+		display: none
+
+	.header
+		&__top
+			padding-left: 10px
+			padding-right: 10px
+
+		&__logo
+			display: none
+
+		&__navigation
+			display: none
+
+		&__categories
+			display: none
+
+		&__banner
+			margin-top: 25px
+			border-bottom: 4px solid $accent
+
+	.filter-panel
+		display: none
+
+	.banner
+		&__title
+			font-size: 40px
+			line-height: 40px
+
+		&__inner
+			padding-bottom: 5px
+
+	.tags
+		&__item
+			display: inline-block
+			font-weight: 300
+			line-height: 14px
+			margin: 0 7px
+			margin-bottom: 12px
+
+			&:first-child
+				margin-left: 7px
+
+			&:last-child
+				margin-right: 7px
+
+
+		&--white 
+			text-align: center
+			display: inline-block
+			.tags__item
+				margin-bottom: 0
+				position: relative
+				margin-bottom: 25px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

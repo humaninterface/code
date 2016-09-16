@@ -1,0 +1,147 @@
+@import "bourbon"
+@import "vars"
+
+html, body 
+	margin: 0
+	padding: 0
+
+*
+	box-sizing: border-box
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary
+	display:block
+
+*::-webkit-input-placeholder
+	color: #d1d1d1
+
+*:-moz-placeholder
+	color: #d1d1d1
+
+*::-moz-placeholder
+	color: #d1d1d1
+
+*:-ms-input-placeholder
+	color: #d1d1d1
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	color: $color-main
+	box-sizing: border-box
+	background-color: #fff
+
+	.search-now
+		overflow: hidden
+
+a
+	text-decoration: none
+
+	&:hover
+		text-decoration: underline
+
+strong
+	font-weight: bold
+
+p
+	margin-top: 0
+	margin-bottom: 18px
+
+	&:last-child
+		margin-bottom: 0
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+
+input
+	font-family: $default-font
+
+h1
+	font-size: 42px
+	line-height: 42px
+
+h2
+	font-size: 32px
+
+h3
+	font-size: 22px
+	line-height: 32px
+	font-weight: 600
+
+h4
+	font-size: 18px
+	font-weight: 600
+	line-height: 32px
+
+ul, li
+	margin: 0
+	padding: 0
+
+.list
+	list-style-type: none
+
+	li
+		position: relative
+		padding-left: 15px
+		margin-bottom: 5px
+
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			width: 10px
+			height: 1px
+			top: 50%
+			margin-top: -1px	
+			background-color: $accent
+
+.text-center
+	text-align: center
+
+.left
+	float: left
+
+.right
+	float: right
+
+.clearfix
+	@include clearfix
+
+.hidden
+	display: none
+
+.visible
+	display: block !important
+
+.container
+	max-width: 1298px
+	padding: 0 22px
+	margin: auto
+	position: relative
+	@include clearfix
+
+input
+	appearance: none
+
+	&::-webkit-search-cancel-button
+		display: none
+
+	&:focus
+		outline: none
+
+a, a:focus, a:visited, a:active
+	outline: none
